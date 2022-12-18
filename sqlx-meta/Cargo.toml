@@ -2,7 +2,7 @@
 name = "sqlx-meta"
 version = "0.1.0"
 edition = "2021"
-readme = "README.md"
+readme = "../README.md"
 repository = "https://github.com/rusty-ferris-club/sqlx-meta"
 documentation = "https://docs.rs/sqlx-meta"
 description = "Derive macro for SQLx to get metadata about the entity such as column names"
