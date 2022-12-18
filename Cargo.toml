@@ -1,0 +1,2 @@
+[workspace]
+members = ["sqlx-meta", "sqlx-meta/sqlx-meta-macros", "xtask"]

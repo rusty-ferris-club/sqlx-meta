@@ -1,0 +1,25 @@
+[package]
+name = "sqlx-meta"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/rusty-ferris-club/sqlx-meta"
+documentation = "https://docs.rs/sqlx-meta"
+description = "Derive macro for SQLx to get metadata about the entity such as column names"
+license = "MIT"
+keywords = ["sqlx", "orm", "database"]
+categories = ["database", "asynchronous", "web-programming"]
+authors = [
+  "Dotan Nahum <dotan@rng0.io>",
+  "Trey Dempsey <trey.dempsey@gmail.com>",
+]
+
+
+[dependencies]
+sqlx = { version = "0.6", default-features = false }
+sqlx-meta-macros = { version = "0.3", path = "sqlx-meta-macros" }
+thiserror = "1"
+
+[dev-dependencies]
+sqlx = { version = "0.6", features = ["runtime-tokio-rustls", "sqlite"] }
+tokio-test = "0"
